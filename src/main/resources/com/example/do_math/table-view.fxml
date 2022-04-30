@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<?import org.controlsfx.property.editor.DefaultPropertyEditorFactory?>
+<?import java.lang.String?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.GridPane?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.do_math.DataController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Data type converter">
+        <font>
+            <Font name="Verdana" size="24.0"/>
+        </font>
+    </Label>
+    <Label fx:id="messageValue" text="Enter your data" >
+        <font>
+            <Font name="Verdana" size="14.0"/>
+        </font>
+    </Label>
+    <GridPane prefHeight="400.0" prefWidth="620.0"
+              alignment="center" vgap="10.0" hgap="10.0">
+        <TextField fx:id="byteValue" prefWidth="300.0"  promptText="from -128 to 127" GridPane.columnIndex="0" GridPane.rowIndex="0"></TextField>
+        <TextField fx:id="charValue" prefWidth="300.0" promptText="characters" GridPane.columnIndex="1" GridPane.rowIndex="0"></TextField>
+        <TextField fx:id="shortValue" prefWidth="300.0" promptText="from -32768 to 32767" GridPane.columnIndex="0" GridPane.rowIndex="1"></TextField>
+        <TextField fx:id="longValue" prefWidth="300.0" promptText="from -9223372036854775808 to 9223372036854775807" GridPane.columnIndex="1" GridPane.rowIndex="1"></TextField>
+        <TextField fx:id="intValue" prefWidth="300.0" promptText="from -2147483648 to 2147483647" GridPane.columnIndex="0" GridPane.rowIndex="2"></TextField>
+        <TextField fx:id="floatValue" prefWidth="300.0" promptText="from -3.4E+38 to 3.4E+38" GridPane.columnIndex="1" GridPane.rowIndex="2"></TextField>
+        <TextField fx:id="doubleValue" prefWidth="300.0" promptText="from -1.7E+308 to 1.7E+308" GridPane.columnIndex="0" GridPane.rowIndex="3"></TextField>
+        <TextField fx:id="booleanValue" prefWidth="300.0" promptText="true or false" GridPane.columnIndex="1" GridPane.rowIndex="3"></TextField>
+    </GridPane>
+
+    <TableView fx:id="mathTable" prefHeight="500.0" prefWidth="590.0">
+
+        <columns>
+            <TableColumn prefWidth="100.0" text="Title Data" fx:id="titleData">
+                <cellValueFactory>
+                    <PropertyValueFactory property="titleData" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="70.0" text="Insert Data" fx:id="insertType">
+            </TableColumn>
+            <TableColumn prefWidth="50.0" text="byte" fx:id="byteType">
+            </TableColumn>
+            <TableColumn prefWidth="50.0" text="short" fx:id="shortType">
+            </TableColumn>
+            <TableColumn prefWidth="50.0" text="char" fx:id="charType">
+            </TableColumn>
+            <TableColumn prefWidth="50.0" text="int" fx:id="intType">
+            </TableColumn>
+            <TableColumn prefWidth="50.0" text="long" fx:id="longType">
+            </TableColumn>
+            <TableColumn prefWidth="50.0" text="float" fx:id="floatType">
+            </TableColumn>
+            <TableColumn prefWidth="50.0" text="double" fx:id="doubleType">
+            </TableColumn>
+            <TableColumn prefWidth="70.0" text="boolean" fx:id="booleanType">
+            </TableColumn>
+        </columns>
+    </TableView>
+
+    <Button text="Do Convert" onAction="#doConvertationButton" fx:id="doConvertationButton"/>
+</VBox>
