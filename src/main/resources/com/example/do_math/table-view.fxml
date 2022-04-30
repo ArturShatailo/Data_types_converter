@@ -38,7 +38,7 @@
         <TextField fx:id="booleanValue" prefWidth="300.0" promptText="true or false" GridPane.columnIndex="1" GridPane.rowIndex="3"></TextField>
     </GridPane>
 
-    <TableView fx:id="mathTable" prefHeight="500.0" prefWidth="590.0">
+    <TableView fx:id="mathTable" prefHeight="500.0" prefWidth="730.0">
 
         <columns>
             <TableColumn prefWidth="100.0" text="Title Data" fx:id="titleData">
@@ -46,21 +46,19 @@
                     <PropertyValueFactory property="titleData" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn prefWidth="70.0" text="Insert Data" fx:id="insertType">
+            <TableColumn prefWidth="70.0" text="byte" fx:id="byteType">
             </TableColumn>
-            <TableColumn prefWidth="50.0" text="byte" fx:id="byteType">
+            <TableColumn prefWidth="70.0" text="short" fx:id="shortType">
             </TableColumn>
-            <TableColumn prefWidth="50.0" text="short" fx:id="shortType">
+            <TableColumn prefWidth="70.0" text="char" fx:id="charType">
             </TableColumn>
-            <TableColumn prefWidth="50.0" text="char" fx:id="charType">
+            <TableColumn prefWidth="70.0" text="int" fx:id="intType">
             </TableColumn>
-            <TableColumn prefWidth="50.0" text="int" fx:id="intType">
+            <TableColumn prefWidth="70.0" text="long" fx:id="longType">
             </TableColumn>
-            <TableColumn prefWidth="50.0" text="long" fx:id="longType">
+            <TableColumn prefWidth="70.0" text="float" fx:id="floatType">
             </TableColumn>
-            <TableColumn prefWidth="50.0" text="float" fx:id="floatType">
-            </TableColumn>
-            <TableColumn prefWidth="50.0" text="double" fx:id="doubleType">
+            <TableColumn prefWidth="70.0" text="double" fx:id="doubleType">
             </TableColumn>
             <TableColumn prefWidth="70.0" text="boolean" fx:id="booleanType">
             </TableColumn>

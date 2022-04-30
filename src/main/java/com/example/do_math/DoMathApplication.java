@@ -11,7 +11,7 @@ public class DoMathApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(DoMathApplication.class.getResource("table-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 632, 632);
+        Scene scene = new Scene(fxmlLoader.load(), 772, 632);
         stage.setTitle("Do convert of Data type");
         stage.setScene(scene);
         stage.show();

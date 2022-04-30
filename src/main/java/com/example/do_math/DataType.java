@@ -3,19 +3,17 @@ package com.example.do_math;
 public class DataType {
 
     private String titleData;
-    private String insertType;
-    private byte byteType;
-    private short shortType;
-    private char charType;
-    private long longType;
-    private int intType;
-    private float floatType;
-    private double doubleType;
+    private String byteType;
+    private String shortType;
+    private String charType;
+    private String longType;
+    private String intType;
+    private String floatType;
+    private String doubleType;
     private String booleanType;
 
-    public DataType(String titleData, String insertType, byte byteType, short shortType, char charType, int intType, long longType, float floatType, double doubleType, String booleanType) {
+    public DataType(String titleData, String byteType, String shortType, String charType, String intType, String longType, String floatType, String doubleType, String booleanType) {
         this.titleData = titleData;
-        this.insertType = insertType;
         this.byteType = byteType;
         this.charType = charType;
         this.shortType = shortType;
@@ -34,67 +32,59 @@ public class DataType {
         this.titleData = titleData;
     }
 
-    public String getInsertType() {
-        return insertType;
-    }
-
-    public void setInsertType(String insertType) {
-        this.insertType = insertType;
-    }
-
-    public Byte getByteType() {
+    public String getByteType() {
         return byteType;
     }
 
-    public void setByteType(byte byteType) {
+    public void setByteType(String byteType) {
         this.byteType = byteType;
     }
 
-    public Character getCharType() {
+    public String getCharType() {
         return charType;
     }
 
-    public void setCharType(char charType) {
+    public void setCharType(String charType) {
         this.charType = charType;
     }
 
-    public Short getShortType() {
+    public String getShortType() {
         return shortType;
     }
 
-    public void setShortType(short shortType) {
+    public void setShortType(String shortType) {
         this.shortType = shortType;
     }
 
-    public Long getLongType() {
+    public String getLongType() {
         return longType;
     }
 
-    public void setLongType(long longType) {
+    public void setLongType(String longType) {
         this.longType = longType;
     }
 
-    public Integer getIntType() {
+    public String getIntType() {
         return intType;
     }
 
-    public void setIntType(int intType) {
+    public void setIntType(String intType) {
         this.intType = intType;
     }
 
-    public Float getFloatType() {
+    public String getFloatType() {
         return floatType;
     }
 
-    public void setFloatType(float floatType) {
+    public void setFloatType(String floatType) {
         this.floatType = floatType;
     }
 
-    public Double getDoubleType() {
+    public String getDoubleType() {
         return doubleType;
     }
 
-    public void setDoubleType(double doubleType) {
+    public void setDoubleType(String doubleType) {
         this.doubleType = doubleType;
     }
 
