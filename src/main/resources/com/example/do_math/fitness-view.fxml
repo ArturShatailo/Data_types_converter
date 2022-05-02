@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<?import org.controlsfx.property.editor.DefaultPropertyEditorFactory?>
+<?import java.lang.String?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.GridPane?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.do_math.FitnessController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Fitness Calculation">
+        <font>
+            <Font name="Verdana" size="24.0"/>
+        </font>
+    </Label>
+    <Label fx:id="messageValue" text="Enter your data" >
+        <font>
+            <Font name="Verdana" size="14.0"/>
+        </font>
+    </Label>
+    <GridPane prefHeight="200.0" prefWidth="420.0"
+              alignment="center" vgap="10.0" hgap="10.0">
+        <TextField fx:id="name" prefWidth="130.0" promptText="Name" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="steps" prefWidth="130.0" promptText="Steps" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <TextField fx:id="weight" prefWidth="130.0"  promptText="Weight (kg)" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+        <TextField fx:id="height" prefWidth="130.0" promptText="Height (meters)" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="age" prefWidth="130.0" promptText="Age" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <TextField fx:id="time" prefWidth="130.0" promptText="Time (minutes)" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+    </GridPane>
+
+    <GridPane prefHeight="50.0" prefWidth="420.0"
+              alignment="center" vgap="10.0" hgap="10.0">
+
+        <Label prefWidth="100.0" GridPane.columnIndex="0" GridPane.rowIndex="0" text="Pace"><font><Font name="Verdana" size="12.0"/></font></Label>
+        <Label prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="0" text="Calories"><font><Font name="Verdana" size="12.0"/></font></Label>
+        <Label prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="0" text="BMI"><font><Font name="Verdana" size="12.0"/></font></Label>
+        <Label prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="0" text="Steps/hr"><font><Font name="Verdana" size="12.0"/></font></Label>
+    </GridPane>
+    <GridPane prefHeight="50.0" prefWidth="420.0"
+              alignment="center" vgap="10.0" hgap="10.0">
+        <Label fx:id="paceSet" prefWidth="100.0" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Label fx:id="caloriesSet" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Label fx:id="bmiSet" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+        <Label fx:id="sphSet" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+    </GridPane>
+    <Button text="Calculate" onAction="#doFitnessCalculationButton" fx:id="doFitnessCalculationButton"/>
+</VBox>
